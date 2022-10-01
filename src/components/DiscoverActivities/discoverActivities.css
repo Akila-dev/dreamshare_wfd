@@ -1,0 +1,73 @@
+.discover-card_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem 1.3rem;
+}
+
+.discover-card {
+  position: relative;
+  mix-blend-mode: normal;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+}
+
+.discover-card:nth-child(5),
+.discover-card:nth-child(6) {
+  grid-column: span 2;
+}
+
+.discover-card img {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.discover-card div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 310px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.05));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+  border-radius: 4px;
+}
+
+.discover-card h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+@media screen and (max-width: 1023px) {
+  .discover-card_container {
+    gap: 0.8rem 1rem;
+  }
+  .discover-card div {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .discover-card_container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding-top: 12px;
+  }
+  .discover-card,
+  .discover-card img,
+  .discover-card div {
+    height: 120px;
+  }
+  .discover-card:nth-child(5),
+  .discover-card:nth-child(6) {
+    grid-column: span 1;
+  }
+}

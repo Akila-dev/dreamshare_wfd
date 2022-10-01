@@ -1,0 +1,33 @@
+.partner_card {
+  text-align: center;
+}
+
+.partner_card h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+  padding: 17px 0 22px;
+}
+
+.partner_card p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+}
+
+@media screen and (max-width: 1023px) {
+  .partner_card h3 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .partner_card p {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

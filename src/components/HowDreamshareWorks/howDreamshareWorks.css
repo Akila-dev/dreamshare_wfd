@@ -1,0 +1,27 @@
+.how_works {
+  padding: 95px 0;
+}
+
+.card_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .card_container {
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .how_works {
+    padding: 35px 0;
+  }
+
+  .card_container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+}

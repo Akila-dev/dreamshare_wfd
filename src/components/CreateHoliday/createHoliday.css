@@ -1,0 +1,79 @@
+.create_holiday {
+  padding: 95px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create_holiday p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 14px;
+  color: #666666;
+  padding: 1rem 0 1.5rem;
+}
+
+.create_holiday form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.create_holiday input {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #999999;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+  padding: 10px 15px;
+  border-radius: 3px;
+  outline: none;
+  width: 300px;
+}
+
+.create_holiday input::placeholder {
+  color: #999999;
+}
+
+.create_holiday button {
+  color: white;
+  background: #ff4e50;
+  font-size: 16px;
+  padding: 12px 35px;
+}
+
+@media screen and (max-width: 750px) {
+  .create_holiday {
+    padding: 35px 0;
+  }
+
+  .create_holiday p {
+    padding: 0rem 0 15px;
+  }
+
+  .create_holiday form {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .create_holiday input {
+    width: 100%;
+    display: block;
+    max-width: 280px;
+  }
+  .create_holiday button {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    max-width: 280px;
+  }
+}

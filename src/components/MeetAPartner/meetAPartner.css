@@ -1,0 +1,44 @@
+.meet_partner {
+  padding-bottom: 90px;
+}
+
+.meet_partner .rounded-button {
+  border: 2px solid #ff4e50;
+  color: #ff4e50;
+  font-size: 16px;
+  margin-top: 50px;
+  text-align: center;
+
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.partners_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .partners_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3.5rem 2rem;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .meet_partner .rounded-button {
+    text-align: center;
+
+    position: relative;
+    left: 0;
+    transform: none;
+    display: block;
+    width: 90%;
+    margin: 35px auto 0;
+  }
+}
