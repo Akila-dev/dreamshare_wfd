@@ -21,7 +21,7 @@ const HowDreamshareWorks = () => {
       year: "2022",
     },
     headers: {
-      "X-RapidAPI-Key": process.env.RAPID_API_KEY,
+      "X-RapidAPI-Key": "c864a3591bmsh5e772c04e59f4bdp15c7f2jsn6f0545c56764",
       "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",
     },
   };
