@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import FadeLoader from "react-spinners/FadeLoader";
 import "./meetAPartner.css";
 import { Partner } from "../../cards";
 
@@ -63,9 +64,9 @@ const MeetAPartner = () => {
   return (
     <div className="meet_partner">
       <h2 className="section-heading">Most Popular Celebs</h2>
-      <div className="partners_container">
-        {actorsList.length > 0 ? (
-          actorsList?.map((actor) => (
+      {actorsList.length > 0 ? (
+        <div className="partners_container">
+          {actorsList?.map((actor) => (
             <Partner
               key={actor.primaryName}
               img={imgIndexFunc()}
@@ -74,11 +75,13 @@ const MeetAPartner = () => {
                 actor.birthYear
               }. ${actor.primaryProfession.replace(/,/g, ", ")}`}
             />
-          ))
-        ) : (
-          <p>Loading ...</p>
-        )}
-      </div>
+          ))}
+        </div>
+      ) : (
+        <div className="loader-container">
+          <FadeLoader color="#999" height={14} margin={1} />
+        </div>
+      )}
       <button
         className="rounded-button hover_bg"
         onClick={() => showMoreActors()}

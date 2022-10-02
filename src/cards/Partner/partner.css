@@ -3,6 +3,12 @@
   text-transform: capitalize;
 }
 
+.partner_card img {
+  width: 126px;
+  height: 126px;
+  object-fit: cover;
+}
+
 .partner_card h3 {
   font-style: normal;
   font-weight: 700;
