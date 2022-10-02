@@ -3,7 +3,7 @@ import "./partner.css";
 
 const Partner = ({ img, name, about }) => {
   return (
-    <div class="partner_card">
+    <div className="partner_card">
       <div>
         <img src={img} alt="partner" />
       </div>

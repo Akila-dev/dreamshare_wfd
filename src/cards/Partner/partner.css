@@ -1,5 +1,6 @@
 .partner_card {
   text-align: center;
+  text-transform: capitalize;
 }
 
 .partner_card h3 {
