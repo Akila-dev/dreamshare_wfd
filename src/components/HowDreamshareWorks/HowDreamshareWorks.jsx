@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import FadeLoader from "react-spinners/FadeLoader";
 import "./howDreamshareWorks.css";
 import axios from "axios";
 
@@ -52,9 +53,9 @@ const HowDreamshareWorks = () => {
   return (
     <div className="how_works">
       <h2 className="section-heading">Most Popular Movies</h2>
-      <div className="card_container">
-        {movieList.length > 0 ? (
-          movieList?.map((movie) => (
+      {movieList.length > 0 ? (
+        <div className="card_container">
+          {movieList?.map((movie) => (
             <HowWorks
               key={movie.id}
               img={movie.primaryImage.url}
@@ -62,11 +63,13 @@ const HowDreamshareWorks = () => {
               title={movie.titleText.text}
               text={movie.primaryImage.caption.plainText}
             />
-          ))
-        ) : (
-          <p className="h-400">Loading ...</p>
-        )}
-      </div>
+          ))}
+        </div>
+      ) : (
+        <div className="loader-container">
+          <FadeLoader color="#999" height={14} margin={1} />
+        </div>
+      )}
       <button
         className="rounded-button hover_bg"
         onClick={() => showMoreMovies()}

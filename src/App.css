@@ -80,6 +80,14 @@ a {
   margin-bottom: 35px;
 }
 
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+  width: 100%;
+}
+
 @media screen and (max-width: 1023px) {
   .container {
     max-width: 900px;
@@ -101,5 +109,9 @@ a {
     font-size: 22px;
     line-height: 27px;
     margin-bottom: 20px;
+  }
+  .hover_grow:hover {
+    transform: scale(1.01);
+    transition: 0.5s ease-in;
   }
 }
