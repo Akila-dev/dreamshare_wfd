@@ -1,29 +1,14 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
-
-import {
-  Header,
-  Footer,
-  HowDreamshareWorks,
-  MeetAPartner,
-  CreateHoliday,
-  DiscoverActivities,
-} from "./components";
+import HomePage from "./components/HomePage.jsx";
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <div className="container">
-        <HowDreamshareWorks />
-        <MeetAPartner />
-        <DiscoverActivities />
-
-        <CreateHoliday />
-      </div>
-      <Footer />
-    </div>
+    <Routes>
+      <Route axact path="/" element={<HomePage />} />
+    </Routes>
   );
 };
 

@@ -4,11 +4,11 @@ import aretoImg from "../../images/Areto.png";
 
 const Footer = () => {
   return (
-    <div class="footer">
-      <div class="container">
-        <div class="footer_contents">
+    <div className="footer">
+      <div className="container">
+        <div className="footer_contents">
           <h1>DREAMSHARE</h1>
-          <div class="footer_quicklinks">
+          <div className="footer_quicklinks">
             <h4>Company</h4>
             <div>
               <a href="/">About</a>
@@ -22,7 +22,7 @@ const Footer = () => {
           <h4>Partners</h4>
           <div>
             <h3>DESIGNED BY</h3>
-            <img class="areto-img" src={aretoImg} alt="Areto" />
+            <img className="areto-img" src={aretoImg} alt="Areto" />
           </div>
         </div>
       </div>
