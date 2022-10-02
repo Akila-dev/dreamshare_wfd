@@ -67,7 +67,7 @@ const MeetAPartner = () => {
         {actorsList.length > 0 ? (
           actorsList?.map((actor) => (
             <Partner
-              key={actor.id}
+              key={actor.primaryName}
               img={imgIndexFunc()}
               name={actor.primaryName}
               about={`Born ${
