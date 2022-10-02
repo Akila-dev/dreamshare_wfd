@@ -125,4 +125,8 @@
   .how_works-card h3 {
     margin: 35px 0 25px;
   }
+  .how_works-card:hover {
+    box-shadow: 0 0 10px #ff4e50;
+    transform: scale(1.01);
+  }
 }
