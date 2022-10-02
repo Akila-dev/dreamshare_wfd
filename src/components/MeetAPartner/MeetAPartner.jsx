@@ -19,7 +19,7 @@ const MeetAPartner = () => {
     url: "https://moviesdatabase.p.rapidapi.com/actors",
     params: { limit: show_n_Actors, page: "1" },
     headers: {
-      "X-RapidAPI-Key": "c864a3591bmsh5e772c04e59f4bdp15c7f2jsn6f0545c56764",
+      "X-RapidAPI-Key": process.env.RAPID_API_KEY2,
       "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",
     },
   };
