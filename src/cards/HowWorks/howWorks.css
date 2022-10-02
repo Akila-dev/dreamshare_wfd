@@ -3,6 +3,8 @@
   height: 400px;
   border-radius: 4px;
   transition: 0.8s ease-in;
+  -webkit-transition: 0.8s ease-in;
+  -moz-transition: 0.8s ease-in;
 }
 
 .how_works-card:hover {
@@ -11,6 +13,8 @@
   transform: scale(1.05);
   border-radius: 5px;
   transition: 0.8s ease-out;
+  -webkit-transition: 0.8s ease-out;
+  -moz-transition: 0.8s ease-out;
 }
 
 .how_works-card img {
