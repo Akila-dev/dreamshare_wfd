@@ -41,4 +41,17 @@
     width: 90%;
     margin: 35px auto 0;
   }
+  .partners_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem 1.75rem;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 300px) {
+  .partners_container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    max-width: 250px;
+  }
 }
